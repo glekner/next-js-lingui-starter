@@ -1,19 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactCompiler: true,
+  reactCompiler: false,
   turbopack: {
     rules: {
-      '*.po': {
-        loaders: ['@lingui/loader'],
-        as: '*.js'
-      }
-    }
+      "*.po": {
+        loaders: ["@lingui/loader"],
+        as: "*.js",
+      },
+    },
   },
   experimental: {
-    swcPlugins: [['@lingui/swc-plugin', {}]]
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
+    swcPlugins: [["@lingui/swc-plugin", {}]],
   },
   typescript: {
     ignoreBuildErrors: true,
@@ -21,6 +18,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;

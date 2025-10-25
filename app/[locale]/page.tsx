@@ -1,13 +1,16 @@
-import { Trans } from '@lingui/react/macro';
-import { LocaleSwitcher } from "@/components/locale-switcher"
-import type { LocaleCode } from "@/i18n"
+import { Trans } from "@lingui/react/macro";
+import { setI18n } from "@lingui/react/server";
+import { LocaleSwitcher } from "@/components/locale-switcher";
+import { getI18nInstance, type LocaleCode } from "@/i18n";
 
 export default async function Home({
   params,
 }: {
-  params: Promise<{ locale: string }>
+  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params
+  const { locale } = await params;
+  const i18n = await getI18nInstance(locale as LocaleCode);
+  setI18n(i18n);
 
   return (
     <main className="min-h-screen p-8">
@@ -25,7 +28,10 @@ export default async function Home({
           </p>
 
           <p className="text-gray-600">
-            <Trans>This is a starter template with server-side rendering support for internationalization.</Trans>
+            <Trans>
+              This is a starter template with server-side rendering support for
+              internationalization.
+            </Trans>
           </p>
 
           <div className="bg-blue-50 dark:bg-blue-950 p-6 rounded-lg">
@@ -63,7 +69,9 @@ export default async function Home({
                 <Trans>Translate messages in src/locales/*/messages.po</Trans>
               </li>
               <li>
-                <Trans>Run `npm run lingui:compile` to compile translations</Trans>
+                <Trans>
+                  Run `npm run lingui:compile` to compile translations
+                </Trans>
               </li>
               <li>
                 <Trans>Switch languages using the buttons above</Trans>
@@ -73,5 +81,5 @@ export default async function Home({
         </div>
       </div>
     </main>
-  )
+  );
 }
