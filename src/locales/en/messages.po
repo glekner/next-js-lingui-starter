@@ -1,0 +1,59 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-01-25 12:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+
+msgid "Hello World"
+msgstr "Hello World"
+
+msgid "Welcome to Next.js 16 with Lingui i18n!"
+msgstr "Welcome to Next.js 16 with Lingui i18n!"
+
+msgid "This is a starter template with server-side rendering support for internationalization."
+msgstr "This is a starter template with server-side rendering support for internationalization."
+
+msgid "Features"
+msgstr "Features"
+
+msgid "Next.js 16 App Router"
+msgstr "Next.js 16 App Router"
+
+msgid "Lingui i18n with SSR support"
+msgstr "Lingui i18n with SSR support"
+
+msgid "TypeScript configuration"
+msgstr "TypeScript configuration"
+
+msgid "Multiple locale support (EN, ES, FR)"
+msgstr "Multiple locale support (EN, ES, FR)"
+
+msgid "Turbopack with .po file loader"
+msgstr "Turbopack with .po file loader"
+
+msgid "Getting Started"
+msgstr "Getting Started"
+
+msgid "Run `npm run lingui:extract` to extract messages"
+msgstr "Run `npm run lingui:extract` to extract messages"
+
+msgid "Translate messages in src/locales/*/messages.po"
+msgstr "Translate messages in src/locales/*/messages.po"
+
+msgid "Run `npm run lingui:compile` to compile translations"
+msgstr "Run `npm run lingui:compile` to compile translations"
+
+msgid "Switch languages using the buttons above"
+msgstr "Switch languages using the buttons above"
+
+msgid "Plural Example"
+msgstr "Plural Example"
+
+msgid "You have {0} message"
+msgstr "You have {0} message"
+
+msgid "You have {0} messages"
+msgstr "You have {0} messages"
