@@ -6,10 +6,10 @@ import { getI18nInstance, type LocaleCode } from "@/i18n";
 export default async function Home({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: LocaleCode }>;
 }) {
   const { locale } = await params;
-  const i18n = await getI18nInstance(locale as LocaleCode);
+  const i18n = await getI18nInstance(locale);
   setI18n(i18n);
 
   return (
@@ -19,7 +19,7 @@ export default async function Home({
           <h1 className="text-4xl font-bold">
             <Trans>Hello World</Trans>
           </h1>
-          <LocaleSwitcher currentLocale={locale as LocaleCode} />
+          <LocaleSwitcher currentLocale={locale} />
         </div>
 
         <div className="space-y-4">

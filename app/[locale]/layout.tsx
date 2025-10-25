@@ -1,28 +1,28 @@
-import type React from "react"
-import { LinguiProvider } from "@/components/lingui-provider"
-import { loadCatalog, locales, defaultLocale, type LocaleCode } from "@/i18n"
-import type { Metadata } from "next"
-import "./globals.css"
+import { LinguiProvider } from "@/components/lingui-provider";
+import { loadCatalog, locales, type LocaleCode } from "@/i18n";
+import type { Metadata } from "next";
+import type React from "react";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Next.js + Lingui Starter",
   description: "Next.js 16 with Lingui i18n SSR support",
-}
+};
 
 export async function generateStaticParams() {
-  return Object.keys(locales).map((locale) => ({ locale }))
+  return Object.keys(locales).map((locale) => ({ locale }));
 }
 
 export default async function RootLayout({
   children,
   params,
 }: {
-  children: React.ReactNode
-  params: Promise<{ locale: string }>
+  children: React.ReactNode;
+  params: Promise<{ locale: LocaleCode }>;
 }) {
-  const { locale: localeParam } = await params
-  const locale = (localeParam in locales ? localeParam : defaultLocale) as LocaleCode
-  const messages = await loadCatalog(locale)
+  const { locale } = await params;
+
+  const messages = await loadCatalog(locale);
 
   return (
     <html lang={locale}>
@@ -32,5 +32,5 @@ export default async function RootLayout({
         </LinguiProvider>
       </body>
     </html>
-  )
+  );
 }
