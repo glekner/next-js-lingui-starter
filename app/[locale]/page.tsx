@@ -8,6 +8,8 @@ export default async function Home({
 }: {
   params: Promise<{ locale: LocaleCode }>;
 }) {
+  "use cache";
+
   const { locale } = await params;
   const i18n = await getI18nInstance(locale);
   setI18n(i18n);

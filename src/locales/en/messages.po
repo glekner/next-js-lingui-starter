@@ -6,54 +6,74 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
 
-msgid "Hello World"
-msgstr "Hello World"
-
-msgid "Welcome to Next.js 16 with Lingui i18n!"
-msgstr "Welcome to Next.js 16 with Lingui i18n!"
-
-msgid "This is a starter template with server-side rendering support for internationalization."
-msgstr "This is a starter template with server-side rendering support for internationalization."
-
+#: app/[locale]/page.tsx:41
 msgid "Features"
 msgstr "Features"
 
-msgid "Next.js 16 App Router"
-msgstr "Next.js 16 App Router"
-
-msgid "Lingui i18n with SSR support"
-msgstr "Lingui i18n with SSR support"
-
-msgid "TypeScript configuration"
-msgstr "TypeScript configuration"
-
-msgid "Multiple locale support (EN, ES, FR)"
-msgstr "Multiple locale support (EN, ES, FR)"
-
-msgid "Turbopack with .po file loader"
-msgstr "Turbopack with .po file loader"
-
+#: app/[locale]/page.tsx:64
 msgid "Getting Started"
 msgstr "Getting Started"
 
-msgid "Run `npm run lingui:extract` to extract messages"
-msgstr "Run `npm run lingui:extract` to extract messages"
+#: app/[locale]/page.tsx:22
+msgid "Hello World"
+msgstr "Hello World"
 
-msgid "Translate messages in src/locales/*/messages.po"
-msgstr "Translate messages in src/locales/*/messages.po"
+#: app/[locale]/page.tsx:48
+msgid "Lingui i18n with SSR support"
+msgstr "Lingui i18n with SSR support"
 
+#: app/[locale]/page.tsx:54
+msgid "Multiple locale support (EN, ES, FR)"
+msgstr "Multiple locale support (EN, ES, FR)"
+
+#: app/[locale]/page.tsx:45
+msgid "Next.js 16 App Router"
+msgstr "Next.js 16 App Router"
+
+#~ msgid "Plural Example"
+#~ msgstr "Plural Example"
+
+#: app/[locale]/page.tsx:74
 msgid "Run `npm run lingui:compile` to compile translations"
 msgstr "Run `npm run lingui:compile` to compile translations"
 
+#: app/[locale]/page.tsx:68
+msgid "Run `npm run lingui:extract` to extract messages"
+msgstr "Run `npm run lingui:extract` to extract messages"
+
+#: app/[locale]/page.tsx:79
 msgid "Switch languages using the buttons above"
 msgstr "Switch languages using the buttons above"
 
-msgid "Plural Example"
-msgstr "Plural Example"
+#: app/[locale]/page.tsx:33
+msgid "This is a starter template with server-side rendering support for internationalization."
+msgstr "This is a starter template with server-side rendering support for internationalization."
 
-msgid "You have {0} message"
-msgstr "You have {0} message"
+#: app/[locale]/page.tsx:71
+msgid "Translate messages in src/locales/*/messages.po"
+msgstr "Translate messages in src/locales/*/messages.po"
 
-msgid "You have {0} messages"
-msgstr "You have {0} messages"
+#: app/[locale]/page.tsx:57
+msgid "Turbopack with .po file loader"
+msgstr "Turbopack with .po file loader"
+
+#: app/[locale]/page.tsx:51
+msgid "TypeScript configuration"
+msgstr "TypeScript configuration"
+
+#: app/[locale]/page.tsx:29
+msgid "Welcome to Next.js 16 with Lingui i18n!"
+msgstr "Welcome to Next.js 16 with Lingui i18n!"
+
+#~ msgid "You have {0} message"
+#~ msgstr "You have {0} message"
+
+#~ msgid "You have {0} messages"
+#~ msgstr "You have {0} messages"
